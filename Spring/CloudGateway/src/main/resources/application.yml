@@ -1,0 +1,25 @@
+server:
+  port: 9192
+spring:
+  application:
+    name: CloudGateway
+  cloud:
+    gateway:
+      routes:        - id: payment-component
+          uri: lb://PaymentComponent
+          predicates:            - Path=/**
+          filters:
+          - name: Hystrix
+            args:
+              name: fallbackCommand
+              fallbackUri: forward:/fallback
+       
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    

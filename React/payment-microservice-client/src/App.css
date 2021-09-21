@@ -1,0 +1,83 @@
+*{
+  margin: 0px;
+}
+#welcomeHeader{
+  align:center;
+  color: blue;
+  margin-top: 15px;
+}
+.paymentGateway{
+  margin-top: 50px;
+  display: table;
+  width: 90%; /*Optional*/
+  table-layout: fixed; /*Optional*/
+  border-spacing: 10px; /*Optional*/
+  padding: 10px;
+  margin-left: 60px;
+}
+.local{
+  display: table-cell;
+  background-color: aquamarine; /*Optional*/
+  padding-left: 110px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cross{
+  display: table-cell;
+  background-color:aquamarine; /*Optional*/
+  padding-left: 110px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.status{
+  display: table-cell;
+  background-color:aquamarine; /*Optional*/
+  padding-left: 110px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+  width: 50%;
+  margin-top: 25px;
+  margin-left: 355px;
+}
+h1,h2{
+  text-align: center;
+}
+#btn3{
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+}
+#btn3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid blue;
+}
+#btn3:hover {
+  background-color: blue;
+  color: white;
+}
+.login{
+  margin-left: 500px;
+  margin-top: 30px;
+  background-color: aquamarine;
+  margin-right: 500px;
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
